@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Assignment 6: a simple jQuery playground by Adilzhan Kuandykov, SE-2526.">
+  <title>Mini project · jQuery Lab · Assignment 6</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23245b46'/%3E%3Ctext x='7' y='27' fill='white' font-family='Arial' font-size='23'%3EjQ%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">jQ</span><span>jQuery Lab</span></a>
+      <div class="student">Adilzhan Kuandykov<span>SE-2526 · Web Technologies</span></div>
+    </div>
+  </header>
+  <nav class="navbar container" aria-label="Assignment parts">
+    <a href="index.html"><span>01</span>Basics</a>
+<a href="effects.html"><span>02</span>Effects</a>
+<a href="dom.html"><span>03</span>DOM</a>
+<a href="animations.html"><span>04</span>Animations</a>
+<a href="project.html" class="active" aria-current="page"><span>05</span>Mini project</a>
+  </nav>
+  <main class="container">
+    <div class="page-heading">
+      <div class="eyebrow">ASSIGNMENT 06 <span aria-hidden="true">/</span> THE JQUERY PLAYGROUND</div>
+      <h1>Bouncing ball.</h1>
+      <p class="intro">Start the ball and watch it move across the area, bounce back, and repeat.</p>
+      <p class="part-label">PART 05 OF 05 <span aria-hidden="true">·</span> Task 11</p>
+    </div>
+    <noscript><p>Please enable JavaScript to use these interactive demos.</p></noscript>
+
+<div class="project-layout">
+  <section class="task-card" aria-labelledby="project-title">
+    <div class="task-heading"><span class="task-number">11</span><h2 id="project-title">Bounce from side to side.</h2></div>
+    <p class="task-description">The ball changes direction at each edge and keeps moving until you pause it.</p>
+    <div class="ball-stage">
+      <div id="ball-track">
+        <div id="ball" role="img" aria-label="Green bouncing ball"></div>
+      </div>
+    </div>
+    <div class="button-row">
+      <button id="start-ball">Start</button>
+      <button id="pause-ball" class="secondary" disabled>Pause</button>
+      <button id="reset-ball" class="secondary">Reset</button>
+    </div>
+    <p id="ball-status" class="tip" role="status">Ready to start.</p>
+    <p class="code-note">.animate({ left: "100%" }) → .animate({ left: "0%" }) → repeat</p>
+  </section>
+  <aside class="task-card project-note">
+    <span class="eyebrow">MINI PROJECT CONTROLS</span>
+    <h2>Start. Pause. Reset.</h2>
+    <p><strong>Start</strong> makes the ball move right and bounce back to the left.</p>
+    <p><strong>Pause</strong> holds the ball in place. Press Start to move it again.</p>
+    <p><strong>Reset</strong> stops the ball and returns it to the left edge.</p>
+    <div class="method-list"><code>Click events</code><code>.animate()</code><code>.stop()</code></div>
+    <p class="tip">Use Tab to focus a button, then Enter or Space to activate it.</p>
+  </aside>
+</div>
+
+    <footer class="page-footer"><div class="footer-meta"><span>Assignment 06 · Adilzhan Kuandykov · SE-2526</span></div><a class="next-link" href="index.html">Back to basics <span aria-hidden="true">→</span></a></footer>
+  </main>
+  <!-- Use the full jQuery build: the slim build does not include effects. -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

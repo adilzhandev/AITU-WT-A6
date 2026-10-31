@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Assignment 6: a simple jQuery playground by Adilzhan Kuandykov, SE-2526.">
+  <title>Basics · jQuery Lab · Assignment 6</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23245b46'/%3E%3Ctext x='7' y='27' fill='white' font-family='Arial' font-size='23'%3EjQ%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">jQ</span><span>jQuery Lab</span></a>
+      <div class="student">Adilzhan Kuandykov<span>SE-2526 · Web Technologies</span></div>
+    </div>
+  </header>
+  <nav class="navbar container" aria-label="Assignment parts">
+    <a href="index.html" class="active" aria-current="page"><span>01</span>Basics</a>
+<a href="effects.html"><span>02</span>Effects</a>
+<a href="dom.html"><span>03</span>DOM</a>
+<a href="animations.html"><span>04</span>Animations</a>
+<a href="project.html"><span>05</span>Mini project</a>
+  </nav>
+  <main class="container">
+    <div class="page-heading">
+      <div class="eyebrow">ASSIGNMENT 06 <span aria-hidden="true">/</span> THE JQUERY PLAYGROUND</div>
+      <h1>Start small. Make a change.</h1>
+      <p class="intro">Select an element, change its content, and see jQuery in action.</p>
+      <p class="part-label">PART 01 OF 05 <span aria-hidden="true">·</span> Tasks 00–01</p>
+    </div>
+    <noscript><p>Please enable JavaScript to use these interactive demos.</p></noscript>
+
+<div class="intro-layout">
+  <section class="task-card setup-card" aria-labelledby="setup-title">
+    <div class="task-heading"><span class="task-number">00</span><h2 id="setup-title">Ready when you are.</h2></div>
+    <p>jQuery is loaded from a CDN. Our code waits until the page is ready before adding click events.</p>
+    <p class="tip">Open Developer Tools → Console to see the real message.</p>
+    <div class="method-list"><code>$(document).ready()</code><code>console.log()</code></div>
+  </section>
+  <aside class="task-card">
+    <span class="eyebrow">THE SIMPLE RECIPE</span>
+    <h2>Select. Listen. Change.</h2>
+    <p class="task-description">Every demo follows the same idea: find an element, listen for an event, and do something.</p>
+    <div class="console-box"><code>$("#button").on("click", function () {<br>&nbsp;&nbsp;$("#title").text("Hello!");<br>});</code></div>
+    <p class="tip">Try the buttons below. You can reset and experiment again.</p>
+  </aside>
+</div>
+<section class="task-card" aria-labelledby="selectors-title">
+  <div class="task-heading"><span class="task-number">01</span><h2 id="selectors-title">Find it. Change it.</h2></div>
+  <p class="task-description">Three selectors, three ways to update the page.</p>
+  <div class="demo-area selector-demo" id="selector-demo">
+    <p class="mini-label">YOUR LIVE PREVIEW</p>
+    <h3 id="demo-title">A little change starts here.</h3>
+    <p class="demo-description">This paragraph is selected by its class.</p>
+    <div class="method-list"><span class="sample-tag">HTML</span><span class="sample-tag">CSS</span><span class="sample-tag">jQuery</span></div>
+  </div>
+  <div class="button-row">
+    <button id="change-text">Change text <span aria-hidden="true">↗</span></button>
+    <button id="change-html" class="secondary">Add HTML</button>
+    <button id="change-css" class="secondary">Change CSS</button>
+    <button id="reset-selectors" class="text-button">Reset</button>
+  </div>
+  <p class="code-note">#demo-title → .text() &nbsp; · &nbsp; .demo-description → .html() &nbsp; · &nbsp; span → .css()</p>
+</section>
+
+    <footer class="page-footer"><div class="footer-meta"><span>Assignment 06 · Adilzhan Kuandykov · SE-2526</span></div><a class="next-link" href="effects.html">Next: Effects <span aria-hidden="true">→</span></a></footer>
+  </main>
+  <!-- Use the full jQuery build: the slim build does not include effects. -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <title>Morning mountain lake</title>
+  <rect width="800" height="420" fill="#dce9e2"/>
+  <circle cx="610" cy="96" r="44" fill="#f4e8ae"/>
+  <path d="M0 265 177 76 340 265 480 112 720 285 800 212V420H0Z" fill="#91b3a4"/>
+  <path d="m177 76-57 72 58-20 52 10Zm303 36-56 65 59-17 43 2Z" fill="#f4f7ef"/>
+  <path d="M0 320 230 193 450 335 665 218 800 298V420H0Z" fill="#3e7965"/>
+  <path d="M0 338Q210 307 390 342T800 336V420H0Z" fill="#a6cbc0"/>
+  <path d="M120 369h240m105 20h165m-260 13h115" stroke="#e0eee6" stroke-width="4" stroke-linecap="round"/>
+</svg>

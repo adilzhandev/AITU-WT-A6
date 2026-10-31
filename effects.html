@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Assignment 6: a simple jQuery playground by Adilzhan Kuandykov, SE-2526.">
+  <title>Effects · jQuery Lab · Assignment 6</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23245b46'/%3E%3Ctext x='7' y='27' fill='white' font-family='Arial' font-size='23'%3EjQ%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">jQ</span><span>jQuery Lab</span></a>
+      <div class="student">Adilzhan Kuandykov<span>SE-2526 · Web Technologies</span></div>
+    </div>
+  </header>
+  <nav class="navbar container" aria-label="Assignment parts">
+    <a href="index.html"><span>01</span>Basics</a>
+<a href="effects.html" class="active" aria-current="page"><span>02</span>Effects</a>
+<a href="dom.html"><span>03</span>DOM</a>
+<a href="animations.html"><span>04</span>Animations</a>
+<a href="project.html"><span>05</span>Mini project</a>
+  </nav>
+  <main class="container">
+    <div class="page-heading">
+      <div class="eyebrow">ASSIGNMENT 06 <span aria-hidden="true">/</span> THE JQUERY PLAYGROUND</div>
+      <h1>A little motion. A big difference.</h1>
+      <p class="intro">Hide, fade, and slide elements with just one jQuery method.</p>
+      <p class="part-label">PART 02 OF 05 <span aria-hidden="true">·</span> Tasks 02–04</p>
+    </div>
+    <noscript><p>Please enable JavaScript to use these interactive demos.</p></noscript>
+
+<div class="task-grid">
+  <section class="task-card" aria-labelledby="visibility-title">
+    <div class="task-heading"><span class="task-number">02</span><h2 id="visibility-title">Now you see it.</h2></div>
+    <p class="task-description">Show or hide a paragraph instantly.</p>
+    <div class="demo-area" style="min-height: 150px;">
+      <p id="visibility-text">Small steps make learning easier. This paragraph can disappear, but the buttons will bring it back.</p>
+    </div>
+    <div class="button-row"><button id="hide-text">Hide</button><button id="show-text" class="secondary">Show</button><button id="toggle-text" class="secondary">Toggle</button></div>
+    <p class="code-note">.hide() &nbsp; .show() &nbsp; .toggle()</p>
+  </section>
+  <section class="task-card" aria-labelledby="fade-title">
+    <div class="task-heading"><span class="task-number">03</span><h2 id="fade-title">A softer entrance.</h2></div>
+    <p class="task-description">Fade a mountain scene in and out.</p>
+    <div class="image-stage"><img id="fade-image" class="demo-image" src="assets/mountains.svg" alt="An illustrated mountain lake in the morning"></div>
+    <div class="button-row"><button id="fade-out">Fade out</button><button id="fade-in" class="secondary">Fade in</button><button id="fade-toggle" class="secondary">Fade toggle</button></div>
+    <p class="code-note">.fadeOut(600) &nbsp; .fadeIn(600) &nbsp; .fadeToggle(600)</p>
+  </section>
+  <section class="task-card wide" aria-labelledby="slide-title">
+    <div class="task-heading"><span class="task-number">04</span><h2 id="slide-title">Room for a little more.</h2></div>
+    <p class="task-description">Slide the panel closed or open to reveal a study tip.</p>
+    <div id="slide-panel" class="demo-area">
+      <p class="mini-label">A NOTE TO REMEMBER</p>
+      <h3>Understand one method at a time.</h3>
+      <p>First select the element. Then call the method. Change the duration from 400 to 1000 to see a slower slide.</p>
+    </div>
+    <div class="button-row"><button id="slide-up">Slide up</button><button id="slide-down" class="secondary">Slide down</button><button id="slide-toggle" class="secondary">Slide toggle</button></div>
+    <p class="code-note">.slideUp(400) &nbsp; .slideDown(400) &nbsp; .slideToggle(400)</p>
+  </section>
+</div>
+
+    <footer class="page-footer"><div class="footer-meta"><span>Assignment 06 · Adilzhan Kuandykov · SE-2526</span></div><a class="next-link" href="dom.html">Next: DOM <span aria-hidden="true">→</span></a></footer>
+  </main>
+  <!-- Use the full jQuery build: the slim build does not include effects. -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

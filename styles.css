@@ -1,0 +1,183 @@
+/* 1. Shared page styles */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #f5f7f2;
+  color: #18372d;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.container { width: min(1120px, calc(100% - 48px)); margin: 0 auto; }
+a { color: #245b46; }
+button, input { font: inherit; }
+button, a, input { -webkit-tap-highlight-color: transparent; }
+button:focus-visible, a:focus-visible, input:focus-visible {
+  outline: 3px solid #6a9e45;
+  outline-offset: 4px;
+}
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { line-height: 1.2; }
+h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -0.5px; }
+h3 { font-size: 19px; }
+p { margin-bottom: 16px; }
+code { font-family: Consolas, monospace; font-size: 0.9em; }
+
+/* 2. Header and five-page navigation */
+.site-header { border-bottom: 1px solid #dce4d8; background: #fcfdf9; }
+.header-inner { display: flex; align-items: center; gap: 24px; min-height: 94px; }
+.brand { display: flex; align-items: center; gap: 12px; color: #18372d; font-weight: 700; font-size: 21px; text-decoration: none; }
+.brand-mark { display: grid; place-items: center; width: 43px; height: 43px; background: #245b46; border-radius: 12px; color: #e6f3d4; font-size: 22px; }
+.brand-subtitle { display: block; margin-top: 2px; color: #657467; font-size: 9px; letter-spacing: 1.6px; }
+.student { margin-left: auto; font-size: 14px; font-weight: 600; line-height: 1.5; }
+.student span { display: block; color: #768375; font-size: 12px; font-weight: 400; }
+.status-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #78a857; }
+.navbar { display: flex; gap: 8px; margin-top: 22px; padding: 7px; border: 1px solid #dce4d8; border-radius: 13px; background: #edf1e9; }
+.navbar a { flex: 1; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 10px 8px; border-radius: 8px; color: #657467; font-size: 14px; font-weight: 600; text-decoration: none; }
+.navbar a span { font-family: Consolas, monospace; font-size: 11px; opacity: 0.65; }
+.navbar a:hover { background: #e2e9dc; color: #18372d; }
+.navbar a.active { background: #245b46; color: white; }
+.navbar a.active span { color: #d6edb7; opacity: 1; }
+
+/* 3. Headings and task cards */
+.page-heading { position: relative; padding: 46px 0 30px; }
+.eyebrow, .mini-label { color: #66805b; font-size: 11px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; }
+.eyebrow { margin-bottom: 15px; }
+h1 { margin-bottom: 17px; max-width: 800px; font-size: 48px; font-weight: 700; letter-spacing: -2px; }
+.intro { max-width: 690px; margin-bottom: 0; color: #6d7b70; font-size: 16px; }
+.part-label { display: inline-block; margin-top: 18px; padding: 4px 11px; border: 1px solid #d8e4d0; border-radius: 20px; color: #607159; font-size: 12px; }
+.task-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.task-card { min-width: 0; padding: 28px; border: 1px solid #dce4d8; border-radius: 16px; background: #fff; }
+.wide { grid-column: 1 / -1; }
+.task-heading { display: flex; align-items: center; gap: 12px; margin-bottom: 13px; }
+.task-number { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; min-width: 34px; height: 30px; padding: 0 8px; border-radius: 7px; background: #edf4e6; color: #597b43; font-family: Consolas, monospace; font-size: 12px; }
+.task-description { margin-bottom: 22px; color: #657261; font-size: 14px; line-height: 1.65; }
+.demo-area { padding: 24px; border: 1px solid #e3e9de; border-radius: 12px; background: #f6f8f2; }
+.demo-area p:last-child { margin-bottom: 0; }
+.button-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+button { cursor: pointer; padding: 10px 17px; border: 1px solid #245b46; border-radius: 8px; background: #245b46; color: #fff; font-size: 13px; font-weight: 600; line-height: 1.4; }
+button:hover { background: #184735; border-color: #184735; }
+button.secondary { border-color: #d6e0cf; background: #fff; color: #36513b; }
+button.secondary:hover { background: #eef4e8; }
+button.text-button { border-color: transparent; background: transparent; color: #687962; }
+button.text-button:hover { background: #f0f4eb; }
+.code-note { margin: 20px 0 0; color: #687761; font-family: Consolas, monospace; font-size: 12px; overflow-wrap: anywhere; }
+.tip { color: #7c8976; font-size: 13px; }
+.method-list { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; list-style: none; }
+.method-list span, .method-list li, .method-list code { padding: 4px 9px; border-radius: 6px; background: #eaf2e1; color: #52723e; font-family: Consolas, monospace; font-size: 12px; }
+
+/* 4. Setup and selector demonstrations */
+.intro-layout { display: grid; grid-template-columns: 1.7fr 1fr; gap: 22px; margin-bottom: 22px; }
+.task-card > h2 { margin: 12px 0; }
+.setup-card { padding: 28px; border: 1px solid #245b46; border-radius: 16px; background: #245b46; color: #fff; }
+.setup-card .task-description, .setup-card .tip { color: #c1d4c1; }
+.setup-card .task-number { background: #3b6e51; color: #def0c2; }
+.setup-card .mini-label { color: #d6edb7; }
+.setup-card .code-note { color: #b6d09f; }
+.console-box { margin: 22px 0; padding: 18px; border: 1px solid #3a6b4e; border-radius: 10px; background: #194432; color: #e0f3cb; font-family: Consolas, monospace; font-size: 13px; line-height: 1.8; overflow-wrap: anywhere; }
+.console-box p { margin-bottom: 0; }
+.selector-demo { background: #fafcf7; }
+.demo-label { margin: 0 0 8px; color: #82907c; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+.sample-tag { display: inline-block; margin: 4px 4px 4px 0; padding: 4px 10px; border: 1px solid #d7e2cf; border-radius: 6px; background: #fff; font-size: 13px; }
+
+/* 5. Effects, lists, images, and form inputs */
+.demo-image { display: block; width: 100%; max-height: 210px; border-radius: 10px; object-fit: cover; }
+.image-stage { height: 220px; }
+.study-list { margin: 0; padding: 0; list-style: none; }
+.study-list li { margin-top: 8px; padding: 10px 13px; border: 1px solid #dfe7d9; border-radius: 8px; background: #fff; font-size: 14px; }
+.study-list li:first-child { margin-top: 0; }
+.empty-list { display: none; color: #7c8976; font-size: 14px; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+label { display: block; margin-bottom: 7px; font-size: 13px; font-weight: 600; }
+input { width: 100%; padding: 12px 14px; border: 1px solid #d6e0cf; border-radius: 8px; background: #fff; color: #18372d; font-size: 14px; }
+input::placeholder { color: #99a191; }
+.live-preview { margin-top: 20px; padding: 20px 22px; border: 1px solid #dce7d3; border-radius: 10px; background: #f1f6eb; overflow-wrap: anywhere; }
+.live-preview p { margin-bottom: 8px; font-size: 14px; }
+.live-preview p:last-child { margin-bottom: 0; }
+.link-preview { margin: 16px 0 0; font-size: 13px; overflow-wrap: anywhere; }
+
+/* 6. The square needs positioning so left and top can animate */
+.animation-stage {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  padding: 16px;
+  border: 1px solid #e0e8da;
+  border-radius: 12px;
+  background-color: #f5f8f0;
+  background-image: radial-gradient(#d4dfcb 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+.animation-box { position: relative; top: 0; left: 0; display: grid; place-items: center; width: 64px; height: 64px; border-radius: 12px; background: #245b46; color: #d6edb7; font-family: Consolas, monospace; font-size: 20px; font-weight: 700; }
+.animation-label { position: absolute; right: 14px; bottom: 8px; color: #95a18c; font-family: Consolas, monospace; font-size: 11px; }
+
+/* 7. Bouncing ball mini project */
+.project-layout { display: grid; grid-template-columns: 1.5fr 1fr; gap: 22px; align-items: start; }
+.ball-stage {
+  height: 260px;
+  padding: 24px;
+  overflow: hidden;
+  border: 1px solid #dce4d8;
+  border-radius: 12px;
+  background-color: #f5f8f0;
+  background-image: radial-gradient(#d4dfcb 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+/* Leave room for the ball's width at the right edge. */
+#ball-track { position: relative; width: calc(100% - 56px); height: 100%; }
+#ball {
+  position: absolute;
+  left: 0%;
+  top: calc(50% - 28px);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #245b46;
+  box-shadow: inset -8px -8px 0 #194432;
+}
+#ball-status { margin: 16px 0 0; }
+button:disabled { cursor: default; opacity: 0.5; }
+.project-note { padding: 28px; border-radius: 16px; background: #245b46; color: #fff; }
+.project-note .mini-label { color: #d6edb7; }
+.project-note .eyebrow { color: #d6edb7; }
+.project-note p, .project-note li { color: #c9d9c5; font-size: 14px; }
+.project-note ol, .project-note ul { padding-left: 20px; }
+.project-note li { margin-bottom: 12px; }
+.project-note code { color: #e2f5cd; }
+.project-note .method-list code { background: #3b6e51; }
+.project-note .code-note { color: #bad2a8; }
+
+/* 8. Footer and smaller screens */
+.page-footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-top: 38px; padding: 24px 0 30px; border-top: 1px solid #dce4d8; color: #8b9685; font-size: 12px; }
+.page-footer p { margin-bottom: 0; }
+.next-link { color: #245b46; font-size: 13px; font-weight: 600; text-decoration: none; }
+.next-link:hover { text-decoration: underline; }
+.footer-meta { color: #8b9685; font-size: 12px; }
+.footer-meta span { display: block; margin-top: 4px; }
+@media (max-width: 850px) {
+  .intro-layout, .project-layout { grid-template-columns: 1fr; }
+  h1 { font-size: 42px; }
+  .navbar a { gap: 6px; font-size: 12px; }
+  .student { font-size: 12px; }
+  .header-inner { gap: 18px; }
+  .brand { font-size: 19px; }
+}
+@media (max-width: 600px) {
+  .container { width: calc(100% - 32px); }
+  .header-inner { flex-wrap: wrap; gap: 12px; padding: 18px 0; }
+  .student { margin-left: auto; }
+  .navbar { flex-wrap: wrap; gap: 5px; margin-top: 16px; }
+  .navbar a { flex: 1 1 28%; padding: 9px 6px; }
+  .page-heading { padding: 32px 0 25px; }
+  h1 { font-size: 34px; letter-spacing: -1.2px; }
+  .intro { font-size: 14px; }
+  .task-grid, .form-grid { grid-template-columns: 1fr; gap: 16px; }
+  .intro-layout, .project-layout { gap: 16px; }
+  .task-card, .setup-card, .project-note { padding: 20px; }
+  .demo-area { padding: 18px; }
+  h2 { font-size: 20px; }
+  .task-heading { gap: 10px; }
+  button { padding: 10px 13px; }
+  .button-row { gap: 7px; }
+  .page-footer { align-items: flex-start; flex-direction: column; gap: 12px; margin-top: 28px; }
+}

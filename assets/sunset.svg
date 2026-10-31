@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <title>Sunset over the hills</title>
+  <rect width="800" height="420" fill="#f2d2b1"/>
+  <circle cx="400" cy="175" r="78" fill="#dc855e"/>
+  <path d="M0 280Q170 115 345 264T800 233V420H0Z" fill="#c69a83"/>
+  <path d="M0 314Q170 225 377 311T800 270V420H0Z" fill="#8c8d74"/>
+  <path d="M0 366Q225 264 450 365T800 321V420H0Z" fill="#4a6c56"/>
+  <path d="M80 86q15-13 30 0m0 0q15-13 30 0m500 23q12-10 24 0m0 0q12-10 24 0" fill="none" stroke="#94664c" stroke-width="4" stroke-linecap="round"/>
+</svg>

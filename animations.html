@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Assignment 6: a simple jQuery playground by Adilzhan Kuandykov, SE-2526.">
+  <title>Animations · jQuery Lab · Assignment 6</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23245b46'/%3E%3Ctext x='7' y='27' fill='white' font-family='Arial' font-size='23'%3EjQ%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">jQ</span><span>jQuery Lab</span></a>
+      <div class="student">Adilzhan Kuandykov<span>SE-2526 · Web Technologies</span></div>
+    </div>
+  </header>
+  <nav class="navbar container" aria-label="Assignment parts">
+    <a href="index.html"><span>01</span>Basics</a>
+<a href="effects.html"><span>02</span>Effects</a>
+<a href="dom.html"><span>03</span>DOM</a>
+<a href="animations.html" class="active" aria-current="page"><span>04</span>Animations</a>
+<a href="project.html"><span>05</span>Mini project</a>
+  </nav>
+  <main class="container">
+    <div class="page-heading">
+      <div class="eyebrow">ASSIGNMENT 06 <span aria-hidden="true">/</span> THE JQUERY PLAYGROUND</div>
+      <h1>Put your ideas in motion.</h1>
+      <p class="intro">Move a square, build a sequence, and combine changes in one animation.</p>
+      <p class="part-label">PART 04 OF 05 <span aria-hidden="true">·</span> Tasks 08–10</p>
+    </div>
+    <noscript><p>Please enable JavaScript to use these interactive demos.</p></noscript>
+
+<div class="task-grid">
+  <section class="task-card" aria-labelledby="basic-title">
+    <div class="task-heading"><span class="task-number">08</span><h2 id="basic-title">A square on the move.</h2></div>
+    <p class="task-description">Grow from 64 to 100 pixels and move 100 pixels right.</p>
+    <div class="animation-stage"><div id="basic-box" class="animation-box" aria-label="Square for the basic animation"></div></div>
+    <div class="button-row"><button id="animate-basic">Play animation <span aria-hidden="true">↗</span></button><button id="reset-basic" class="secondary">Reset</button></div>
+    <p class="code-note">.animate({ left: 100, width: 100, height: 100 }, 800)</p>
+  </section>
+  <section class="task-card" aria-labelledby="sequence-title">
+    <div class="task-heading"><span class="task-number">09</span><h2 id="sequence-title">One step after another.</h2></div>
+    <p class="task-description">Move right → move down → shrink → return to the start.</p>
+    <div class="animation-stage"><div id="sequence-box" class="animation-box" aria-label="Square for the sequential animation"></div></div>
+    <div class="button-row"><button id="animate-sequence">Play sequence <span aria-hidden="true">↗</span></button><button id="reset-sequence" class="secondary">Reset</button></div>
+    <p class="code-note">.animate(...).animate(...).animate(...).animate(...)</p>
+  </section>
+  <section class="task-card wide" aria-labelledby="combined-title">
+    <div class="task-heading"><span class="task-number">10</span><h2 id="combined-title">Everything, together.</h2></div>
+    <p class="task-description">Move, grow, and fade at the same time using a single animation call.</p>
+    <div class="animation-stage"><div id="combined-box" class="animation-box" aria-label="Square for the combined animation"></div></div>
+    <div class="button-row"><button id="animate-combined">Play combined <span aria-hidden="true">↗</span></button><button id="reset-combined" class="secondary">Reset</button></div>
+    <p class="code-note">One .animate() call → left, top, width, height, opacity</p>
+  </section>
+</div>
+
+    <footer class="page-footer"><div class="footer-meta"><span>Assignment 06 · Adilzhan Kuandykov · SE-2526</span></div><a class="next-link" href="project.html">Next: Mini project <span aria-hidden="true">→</span></a></footer>
+  </main>
+  <!-- Use the full jQuery build: the slim build does not include effects. -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
