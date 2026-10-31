@@ -5,8 +5,8 @@
 
 This project demonstrates jQuery selectors, effects, DOM changes and animations. It uses plain HTML, CSS and JavaScript with jQuery 3.7.1 from a CDN. The mini project is a bouncing ball with Start, Pause and Reset buttons. Each assignment part has a separate page, connected by the navigation bar.
 
-**Website:** [Open the assignment](https://adilzhandev.github.io/aitu-wt-assignment-6/)  
-**Repository:** [adilzhandev/aitu-wt-assignment-6](https://github.com/adilzhandev/aitu-wt-assignment-6)
+**Website:** [Open the assignment](https://adilzhandev.github.io/AITU-WT-A6/)  
+**Repository:** [adilzhandev/AITU-WT-A6](https://github.com/adilzhandev/AITU-WT-A6)
 
 ## Run on localhost
 
