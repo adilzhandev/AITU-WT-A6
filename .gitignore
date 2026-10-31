@@ -1,0 +1,13 @@
+# Local editor, assistant, and account configuration
+.agents/
+.aws/
+.codex/
+.vscode/
+.idea/
+
+# Local files that do not belong in the website
+.DS_Store
+*.log
+.env
+.env.*
+__pycache__/
