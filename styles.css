@@ -162,6 +162,10 @@ button:disabled { cursor: default; opacity: 0.5; }
   .header-inner { gap: 18px; }
   .brand { font-size: 19px; }
 }
+/* Keep enough room for the squares to move without being clipped. */
+@media (max-width: 650px) {
+  .task-grid { grid-template-columns: 1fr; }
+}
 @media (max-width: 600px) {
   .container { width: calc(100% - 32px); }
   .header-inner { flex-wrap: wrap; gap: 12px; padding: 18px 0; }
